@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nuestra Boda | Mari & Joel</title>
+  <title>Nuestra Boda | Mariana & Joel</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
@@ -201,7 +201,7 @@
       align-items: center;
       justify-content: center;
       font-family: 'Alex Brush', cursive;
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: #a38a5e;
       transition: transform 0.2s ease;
       box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
@@ -360,45 +360,56 @@
         font-size: 0.9rem;
       }
 
-      .text-sm {
-        font-size: 1.05rem !important;
-      }
-
-      .text-base {
-        font-size: 1.15rem !important;
-      }
-
-      .text-lg {
-        font-size: 1.3rem !important;
-      }
-
-      .text-xl {
-        font-size: 1.4rem !important;
-      }
-
-      .text-2xl {
-        font-size: 1.6rem !important;
-      }
-
-      .text-3xl {
-        font-size: 2.2rem !important;
-      }
-
-      .text-4xl {
-        font-size: 2.5rem !important;
-      }
-
-      .text-5xl {
-        font-size: 3rem !important;
-      }
-
-      .text-6xl {
-        font-size: 3.5rem !important;
-      }
-
       .invitation-container .gold-foil {
         background-size: 150px;
         border-width: 12px;
+      }
+
+      /* SOLUCIÓN: Todos los textos dentro de .invitation-container con mismo tamaño */
+      .invitation-container {
+        font-size: 1.1rem !important;
+      }
+
+      .invitation-container * {
+        font-size: inherit !important;
+      }
+
+      /* Ajustes específicos para mantener jerarquía visual */
+      .invitation-container .calligraphy {
+        font-size: 2.8rem !important;
+      }
+
+      .invitation-container .countdown-value {
+        font-size: 1.8rem !important;
+      }
+
+      .invitation-container .countdown-label {
+        font-size: 0.85rem !important;
+      }
+
+      .invitation-container .text-xl,
+      .invitation-container .text-2xl,
+      .invitation-container .text-3xl,
+      .invitation-container .text-4xl,
+      .invitation-container .text-5xl,
+      .invitation-container .text-6xl {
+        font-size: 1.1rem !important;
+      }
+
+      .invitation-container h1 {
+        font-size: 2.8rem !important;
+      }
+
+      .invitation-container h3 {
+        font-size: 1.3rem !important;
+      }
+
+      .invitation-container p {
+        font-size: 1.1rem !important;
+      }
+
+      .invitation-container .text-lg {
+        font-size: 1.1rem !important;
       }
     }
 
@@ -419,6 +430,19 @@
       .clock {
         width: 250px;
         height: 250px;
+      }
+
+      /* Ajustes adicionales para pantallas muy pequeñas */
+      .invitation-container .calligraphy {
+        font-size: 2.3rem !important;
+      }
+
+      .invitation-container .countdown-value {
+        font-size: 1.5rem !important;
+      }
+
+      .invitation-container h1 {
+        font-size: 2.3rem !important;
       }
     }
 
@@ -458,7 +482,7 @@
       <div class="envelope-flap"></div>
       <div class="envelope-paper">
         <i class="fas fa-heart"></i>
-        &nbsp;Mari Y Joel&nbsp;&nbsp;
+        &nbsp;Mariana Y Joel&nbsp;&nbsp;
         <i class="fas fa-heart"></i>
       </div>
       <div class="envelope-front"></div>
@@ -491,13 +515,13 @@
         <!-- Header -->
         <br><br><br>
         <div class="text-center mb-10">
-          <p class="text-amber-800 mb-2 tracking-widest text-3xl sm:text-5xl">NUESTRA BODA</p>
+          <p class="text-amber-800 mb-2 tracking-widest text-3xl sm:text-6xl">NUESTRA BODA</p>
           <div class="floral-divider"></div>
           <div class="flex justify-center items-center">
             <img src="boda.png" alt="Pareja de novios" class="rounded-lg" style="height: 250px; object-fit: cover;">
           </div>
           <h1 class="text-6xl sm:text-6xl md:text-5xl text-amber-900 mb-4 calligraphy">
-            Mari <span class="text-amber-700">&</span> Joel
+            Mariana <span class="text-amber-700">&</span> Joel
           </h1>
           <div class="floral-divider"></div>
           <p class="text-amber-700 italic text-lg mt-6">
@@ -610,8 +634,16 @@
 
         <!-- Quote -->
         <div class="text-center mb-10 bg-white p-6 rounded-lg border border-amber-100 shadow-sm">
-          <p class="italic text-amber-800 mb-6 text-xl">"NUESTRA HISTORIA COMIENZA CON UN 'SÍ' Y NO TERMINA JAMÁS..."
+          <p class="italic text-amber-800 text-xl">
+            NUESTRA HISTORIA COMIENZA CON UN 'SÍ' Y NO TERMINA JAMÁS...
           </p>
+        </div>
+        <div class="text-center mb-10 bg-white p-6 rounded-lg border border-amber-100 shadow-sm">
+          <p class="text-amber-900 text-lg">
+            AGRADECEMOS DE CORAZÓN SU CARIÑO, COMPAÑIA Y GENEROSIDAD. SU PRESENCIA ES EL
+            MEJOR REGALO, PERO SI DESEAN OBSEQUIARNOS ALGO MÁS, SERÁ RECIBIDO CON MUCHO AMOR Y GRATITUD.
+        </div>
+        <div class="text-center mb-10 bg-white p-6 rounded-lg border border-amber-100 shadow-sm">
           <p class="text-amber-900 text-lg">CON ILUSIÓN ESPERAMOS COMPARTIR ESTE DÍA TAN ESPECIAL CON USTEDES.</p>
         </div>
 
@@ -625,7 +657,7 @@
               Confirmar Asistencia
             </a>
           </button>
-          <p class="text-lg text-amber-700">Por favor, confirme su asistencia antes del 23 de Agosto.</p>
+          <p class="text-lg text-amber-700">POR FAVOR, CONFIRME SU ASISTENCIA ANTES DEL 23 DE AGOSTO.</p>
           <br><br><br>
         </div>
       </div>
