@@ -329,6 +329,12 @@
       z-index: 4;
     }
 
+    /* Clase especial para el título principal */
+    .main-title {
+      font-size: 4rem !important;
+      /* 6xl en Tailwind = 3.75rem, pero uso 4rem para ser más grande */
+    }
+
     /* MEJORAS SIGNIFICATIVAS */
     /* Textos más grandes en móviles */
     @media (max-width: 768px) {
@@ -372,6 +378,12 @@
 
       .invitation-container * {
         font-size: inherit !important;
+      }
+
+      /* Excepción especial para el título principal - MÁS ESPECÍFICO */
+      .invitation-container .main-title {
+        font-size: 4rem !important;
+        /* 6xl en móvil */
       }
 
       /* Ajustes específicos para mantener jerarquía visual */
@@ -430,6 +442,12 @@
       .clock {
         width: 250px;
         height: 250px;
+      }
+
+      /* Mantener el título grande incluso en pantallas muy pequeñas */
+      .invitation-container .main-title {
+        font-size: 3.5rem !important;
+        /* Un poco más pequeño para pantallas muy pequeñas */
       }
 
       /* Ajustes adicionales para pantallas muy pequeñas */
@@ -515,7 +533,7 @@
         <!-- Header -->
         <br><br><br>
         <div class="text-center mb-10">
-          <p class="text-amber-800 mb-2 tracking-widest text-3xl sm:text-6xl">NUESTRA BODA</p>
+          <p class="text-amber-800 mb-2 tracking-widest text-6xl sm:text-6xl main-title">NUESTRA BODA</p><br>
           <div class="floral-divider"></div>
           <div class="flex justify-center items-center">
             <img src="boda.png" alt="Pareja de novios" class="rounded-lg" style="height: 250px; object-fit: cover;">
@@ -526,7 +544,7 @@
           <div class="floral-divider"></div>
           <p class="text-amber-700 italic text-lg mt-6">
             ESTÁS INVITADO<br>NOS EMBARCAMOS EN UNA NUEVA AVENTURA Y NUESTRA BODA NO ESTARÍA COMPLETA SIN LA PRESENCIA
-            DE NUESTROS SERES QUERIDOS, ASI QUE QUEREMOS QUE ESTÉS ALLÍ CON NOSOTROS.
+            DE NUESTROS SERES QUERIDOS, ASI QUE QUEREMOS QUE ESTÉS AHÍ CON NOSOTROS.
           </p>
           <div class="floral-divider"></div>
         </div>
